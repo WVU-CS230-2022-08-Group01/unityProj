@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using static System.Net.Mime.MediaTypeNames;
 
 public class Randomizer : MonoBehaviour
 {
@@ -23,7 +22,7 @@ public class Randomizer : MonoBehaviour
         //list of possible positions
         List<int> btns = new List<int> { 1, 2, 3, 4};
         //assign position of correct answer
-        int position = Random.Range(1,btns.Count);
+        int position = UnityEngine.Random.Range(1,btns.Count);
         //assign correct answer to random position and update btns
         btns = assignBtn(btns, correct, position);
         //for each incorrect answer
@@ -38,7 +37,7 @@ public class Randomizer : MonoBehaviour
             else
             {
                 //generate new position
-                position = Random.Range(1, btns.Count);
+                position = UnityEngine.Random.Range(1, btns.Count);
                 //assign current element to position and update btns
                 btns = assignBtn(btns, incorrect[i], position);
             }
