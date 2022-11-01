@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
@@ -32,6 +33,7 @@ public class Timer : MonoBehaviour
         if (timeToDisplay < 0)
         {
             timeToDisplay = 0;
+            SceneManager.LoadScene(2);
         }
         float minutes = Mathf.FloorToInt(timeToDisplay / 60);
         float seconds = Mathf.FloorToInt(timeToDisplay % 60);
