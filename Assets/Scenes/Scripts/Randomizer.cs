@@ -9,7 +9,8 @@ public class Randomizer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        string[] wrong = { "wrong", "wrong", "wrong" };
+        randomize("correct button",wrong);
     }
 
     void randomize(string correct, string[] incorrect)
