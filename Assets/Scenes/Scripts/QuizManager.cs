@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public class QuizManager : ScriptableObject
+public class QuizManager : MonoBehaviour
+//public class QuizManager : ScriptableObject
 {
     public static QuizManager Instance { get; private set; }
     public int correct = 0;
