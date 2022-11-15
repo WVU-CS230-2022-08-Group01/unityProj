@@ -13,6 +13,7 @@ public class Randomizer : MonoBehaviour
         randomize("correct button",wrong);
     }
 
+    //error related 
     void randomize(string correct, string[] incorrect)
     {
         //upLeft is 1
@@ -23,25 +24,31 @@ public class Randomizer : MonoBehaviour
         //list of possible positions
         List<int> btns = new List<int> { 1, 2, 3, 4};
         //assign position of correct answer
-        int position = UnityEngine.Random.Range(1,btns.Count);
+        int position = UnityEngine.Random.Range(0,btns.Count);
         //assign correct answer to random position and update btns
+        //correct answer can be assigned multiple times
         btns = assignBtn(btns, correct, position);
         //for each incorrect answer
-        for(int i = 0; i < incorrect.Length; i++)
+        for(int i = 0; i < 3; i++)
         {
             //check if only one element left in btns
             if (btns.Count == 1)
             {
+                //if statement never runs
                 //assign curret element to last element in btns
-                assignBtn(btns, incorrect[i], btns.Count);
+                btns = assignBtn(btns, incorrect[i], position);
             }
             else
             {
                 //generate new position
-                position = UnityEngine.Random.Range(1, btns.Count);
+                position = UnityEngine.Random.Range(0, btns.Count);
+               
                 //assign current element to position and update btns
                 btns = assignBtn(btns, incorrect[i], position);
+                
             }
+            //bug related to random.range, check if position hasn't been used before with btns
+            
         }
     }
 
