@@ -64,7 +64,7 @@ public class FileReading : MonoBehaviour
         string[] rightAnswerArr = rightAnswerList.ToArray();
         string[] wrongAnswerArr = wrongAnswerList.ToArray();
 
-       // print(questionArr);
+       Debug.Log(questionArr);
 
         //Create 2d Array with 
 

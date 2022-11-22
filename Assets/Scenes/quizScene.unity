@@ -726,7 +726,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 780747983}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SceneSwitchQuiz, Assembly-CSharp
         m_MethodName: tempBaclQuiz
         m_Mode: 1
@@ -785,7 +785,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 780747974}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c761473db8927564eaadf9d8367d0e44, type: 3}
+  m_Script: {fileID: 11500000, guid: af87b70c8138b4d45b37acef597cb4ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &829168280
