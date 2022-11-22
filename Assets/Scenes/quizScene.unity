@@ -508,6 +508,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 474055636}
+  - component: {fileID: 474055637}
   m_Layer: 5
   m_Name: botRight
   m_TagString: Untagged
@@ -536,6 +537,18 @@ RectTransform:
   m_AnchoredPosition: {x: 184, y: -186}
   m_SizeDelta: {x: 116, y: 66}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &474055637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474055635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd2a42c4ecc30e4459389dee17966b79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &733168063
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,6 +558,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 733168064}
+  - component: {fileID: 733168065}
   m_Layer: 5
   m_Name: upLeft
   m_TagString: Untagged
@@ -573,6 +587,18 @@ RectTransform:
   m_AnchoredPosition: {x: -269, y: -73}
   m_SizeDelta: {x: 116, y: 66}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &733168065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733168063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd2a42c4ecc30e4459389dee17966b79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &780747974
 GameObject:
   m_ObjectHideFlags: 0
@@ -585,11 +611,9 @@ GameObject:
   - component: {fileID: 780747982}
   - component: {fileID: 780747981}
   - component: {fileID: 780747980}
-  - component: {fileID: 780747979}
-  - component: {fileID: 780747978}
+  - component: {fileID: 780747983}
   - component: {fileID: 780747977}
   - component: {fileID: 780747976}
-  - component: {fileID: 780747983}
   m_Layer: 5
   m_Name: Button Layer
   m_TagString: MaterialButtonLayer
@@ -643,45 +667,6 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &780747978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 780747974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2eb2ff9f02bd9b4db2ae7a194623fac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  autoSize: 1
-  sizePercentage: 75
-  rippleSize: 0
-  rippleSpeed: 6
-  rippleColor: {r: 0, g: 0, b: 0, a: 1}
-  rippleStartAlpha: 0.4
-  rippleEndAlpha: 0.2
-  highlightWhen: 2
-  moveTowardCenter: 0
-  toggleMask: 1
-  dontRippleOnScroll: 0
-  scrollDelayCheckTime: 0.05
---- !u!114 &780747979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 780747974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9242969ab3c7f540abb7f880e43c080, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite1x: {fileID: 21300000, guid: 925c7f2845cf85045b592992d742cf0b, type: 3}
-  sprite2x: {fileID: 21300000, guid: d8e46d9c4c30ef643a82a2f3d6c9795f, type: 3}
-  sprite4x: {fileID: 21300000, guid: b4a65d9f0ce3a7748aaf7dbfc8aaf25c, type: 3}
 --- !u!114 &780747980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -726,7 +711,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1311139633}
         m_TargetAssemblyTypeName: SceneSwitchQuiz, Assembly-CSharp
         m_MethodName: tempBaclQuiz
         m_Mode: 1
@@ -785,7 +770,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 780747974}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af87b70c8138b4d45b37acef597cb4ed, type: 3}
+  m_Script: {fileID: 11500000, guid: c761473db8927564eaadf9d8367d0e44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &829168280
@@ -939,7 +924,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 829168287}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 474055637}
+        m_TargetAssemblyTypeName: AnswerTag, Assembly-CSharp
+        m_MethodName: instantiateBotRight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &829168287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1342,6 +1339,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1190863494}
+  - component: {fileID: 1190863495}
   m_Layer: 5
   m_Name: upRight
   m_TagString: Untagged
@@ -1370,6 +1368,18 @@ RectTransform:
   m_AnchoredPosition: {x: 184, y: -82}
   m_SizeDelta: {x: 116, y: 66}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1190863495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190863493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd2a42c4ecc30e4459389dee17966b79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1245566760
 GameObject:
   m_ObjectHideFlags: 0
@@ -1379,6 +1389,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1245566761}
+  - component: {fileID: 1245566762}
   m_Layer: 5
   m_Name: botLeft
   m_TagString: Untagged
@@ -1407,6 +1418,18 @@ RectTransform:
   m_AnchoredPosition: {x: -269, y: -186}
   m_SizeDelta: {x: 116, y: 66}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1245566762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245566760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd2a42c4ecc30e4459389dee17966b79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1311139631
 GameObject:
   m_ObjectHideFlags: 0
@@ -1416,6 +1439,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1311139632}
+  - component: {fileID: 1311139633}
   m_Layer: 5
   m_Name: Button - Flat
   m_TagString: Untagged
@@ -1444,6 +1468,18 @@ RectTransform:
   m_AnchoredPosition: {x: -292, y: 189}
   m_SizeDelta: {x: 116, y: 66}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1311139633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311139631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c761473db8927564eaadf9d8367d0e44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1344709609
 GameObject:
   m_ObjectHideFlags: 0
@@ -1787,7 +1823,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1589541919}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 733168065}
+        m_TargetAssemblyTypeName: AnswerTag, Assembly-CSharp
+        m_MethodName: instantiateUpLeft
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1589541919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2086,7 +2134,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1795743047}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1190863495}
+        m_TargetAssemblyTypeName: AnswerTag, Assembly-CSharp
+        m_MethodName: instatiateUpRight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1795743047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2136,6 +2196,7 @@ GameObject:
   - component: {fileID: 1825010047}
   - component: {fileID: 1825010048}
   - component: {fileID: 1825010049}
+  - component: {fileID: 1825010050}
   m_Layer: 5
   m_Name: GameObject
   m_TagString: Untagged
@@ -2187,6 +2248,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1fa5dcb1b16b7ab49a4b2036be8c2bad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1825010050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825010046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd2a42c4ecc30e4459389dee17966b79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1894987336
@@ -2452,7 +2525,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2008762224}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1245566762}
+        m_TargetAssemblyTypeName: AnswerTag, Assembly-CSharp
+        m_MethodName: instantiateBotLeft
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2008762224
 MonoBehaviour:
   m_ObjectHideFlags: 0

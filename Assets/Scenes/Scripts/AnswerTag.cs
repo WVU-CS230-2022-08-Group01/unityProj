@@ -4,34 +4,39 @@ using UnityEngine;
 
 public class AnswerTag : MonoBehaviour
 {
-    bool answerBotRight;
-    bool answerBotLeft;
-    bool answerUpLeft;
-    bool answerUpRight;
+    bool answerBot = false;
+    Randomizer sn;
+    QuizManager sc;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        Randomizer sn = gameObject.GetComponent<Randomizer>();
+        QuizManager sc = gameObject.GetComponent<QuizManager>();
     }
 
-    void instantiateBotRight(bool answerTag)
+    public void instantiateBotRight()
     {
-        answerBotRight = answerTag;
+
+        answerBot = sn.correctPosition(4);
+        sc.incrementDecrement(answerBot);
     }
 
-    void instantiateBotLeft(bool answerTag)
+    public void instantiateBotLeft()
     {
-        answerBotLeft = answerTag;
+        answerBot = sn.correctPosition(3);
+        sc.incrementDecrement(answerBot);
     }
 
-   void instantiateUpLeft(bool answerTag)
+   public void instantiateUpLeft()
     {
-        answerUpLeft = answerTag;
+        answerBot = sn.correctPosition(1);
+        sc.incrementDecrement(answerBot);
     }
 
-    void instatiateUpRight(bool answerTag)
+    public void instatiateUpRight()
     {
-        answerUpRight = answerTag;
+        answerBot = sn.correctPosition(2);
+        sc.incrementDecrement(answerBot);
     }
 }

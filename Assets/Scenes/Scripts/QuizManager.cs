@@ -17,23 +17,21 @@ public class QuizManager : MonoBehaviour
         incorrect = 0;
     }
 
-    void increment()
+    public void incrementDecrement(bool result)
     {
-        correct++;
+        if (result)
+            correct++;
+        else
+            incorrect++;
+
+        //if question pool is not empty
+        refresher();
     }
 
-    void decrement()
+    public void refresher()
     {
-        incorrect++;
+        //calls randomize and resets timer
     }
 
-    int getCorrect()
-    {
-        return correct;
-    }
 
-    int getIncorrect()
-    {
-        return incorrect;
-    }
 }

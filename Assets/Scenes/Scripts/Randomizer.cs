@@ -4,8 +4,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+
+
+//big note
+//please get input from file reading for the buttons
+//big note
+
+
+
+
 public class Randomizer : MonoBehaviour
 {
+    //int variable to hold the correct position for the correct answer
+    int correctPos = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +40,9 @@ public class Randomizer : MonoBehaviour
         //assign correct answer to random position and update btns
         //correct answer can be assigned multiple times
         btns = assignBtn(btns, correct, position);
+        //intstatiates correctPos to hold the correct answer position
+        correctPos = position;
+
         //for each incorrect answer
         for(int i = 0; i < 3; i++)
         {
@@ -83,6 +98,16 @@ public class Randomizer : MonoBehaviour
                 break;
         }
         return btns;
+    }
+
+    //method to return if the button pressed is the correct button
+    //takes the pressed buttons position as input then checks if it is the correct button, if true then returns true, lese returns false
+    public bool correctPosition(int buttonPos)
+    {
+        if(buttonPos == correctPos)
+            return true;
+
+        return false;
     }
 
     // Update is called once per frame
