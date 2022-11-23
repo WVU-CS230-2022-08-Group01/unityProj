@@ -21,80 +21,68 @@ public class Randomizer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        string[] wrong = { "wrong", "wrong", "wrong" };
+        string[] wrong = { "wrong1", "wrong2", "wrong3" };
         randomize("correct button",wrong);
     }
 
     //error related 
     void randomize(string correct, string[] incorrect)
     {
-        //upLeft is 1
-        //upRight is 2
-        //botLeft is 3
-        //botRight is 4
+        //upLeft is 0
+        //upRight is 1
+        //botLeft is 2
+        //botRight is 3
 
         //list of possible positions
-        List<int> btns = new List<int> { 1, 2, 3, 4};
+        List<int> btns = new List<int> { 0, 1, 2, 3};
         //assign position of correct answer
-        int position = UnityEngine.Random.Range(0,btns.Count);
+        int correctPos = UnityEngine.Random.Range(0,btns.Count);
         //assign correct answer to random position and update btns
         //correct answer can be assigned multiple times
-        btns = assignBtn(btns, correct, position);
-        //intstatiates correctPos to hold the correct answer position
-        correctPos = position;
+        btns = assignBtn(btns, correct, correctPos);
 
         //for each incorrect answer
         for(int i = 0; i < 3; i++)
         {
-            //check if only one element left in btns
-            if (btns.Count == 1)
-            {
-                //if statement never runs
-                //assign curret element to last element in btns
-                btns = assignBtn(btns, incorrect[i], position);
-            }
-            else
-            {
-                //generate new position
-                position = UnityEngine.Random.Range(0, btns.Count);
-               
-                //assign current element to position and update btns
-                btns = assignBtn(btns, incorrect[i], position);
-                
-            }
-            //bug related to random.range, check if position hasn't been used before with btns
-            
+            int position = UnityEngine.Random.Range(0, btns.Count-1);
+            //generate new position
+            position = btns.ToArray()[position];
+            //assign current element to position and update btns
+            btns = assignBtn(btns, incorrect[i], position);
         }
     }
 
     List<int> assignBtn(List<int> btns, string answer, int position)
     {
         //check what the given position is
+        Debug.Log(answer);
+        Debug.Log(position);
+        Debug.Log(btns.Count);
         switch (position)
         {
-            case 1:
+            case 0:
                 //edit text of upLeft to be answer
                 GameObject.Find("upLeft").GetComponentInChildren<Text>().text = answer;
                 //remove 1 from buttons array
-                btns.RemoveAt(0);
+                btns.Remove(0);
                 break;
-            case 2:
+            case 1:
                 //edit text of upRight to be answer
                 GameObject.Find("upRight").GetComponentInChildren<Text>().text = answer;
                 //remove 2 from buttons array
-                btns.RemoveAt(1);
+                btns.Remove(1);
                 break;
-            case 3:
+            case 2:
                 //edit text of botLeft to be answer
                 GameObject.Find("botLeft").GetComponentInChildren<Text>().text = answer;
                 //remove 3 from buttons array
-                btns.RemoveAt(2);
+                btns.Remove(2);
                 break;
-            case 4:
+            case 3:
                 //edit text of botRight to be answer
                 GameObject.Find("botRight").GetComponentInChildren<Text>().text = answer;
                 //remove 4 from buttons array
-                btns.RemoveAt(3);
+                btns.Remove(3);
                 break;
         }
         return btns;
