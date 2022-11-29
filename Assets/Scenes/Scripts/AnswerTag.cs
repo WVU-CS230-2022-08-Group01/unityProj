@@ -5,14 +5,14 @@ using UnityEngine;
 public class AnswerTag : MonoBehaviour
 {
     bool answerBot = false;
-    Randomizer sn;
-    QuizManager sc;
+    Randomizer sn = gameObject.GetComponent<Randomizer>();
+    QuizManager sc = gameObject.GetComponent<QuizManager>();
+
 
     // Start is called before the first frame update
     void Start()
     {
-        Randomizer sn = gameObject.GetComponent<Randomizer>();
-        QuizManager sc = gameObject.GetComponent<QuizManager>();
+        
     }
 
     public void instantiateBotRight()
