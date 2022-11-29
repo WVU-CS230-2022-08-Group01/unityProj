@@ -20,17 +20,37 @@ public class QuizManager : MonoBehaviour
     public void incrementDecrement(bool result)
     {
         if (result)
+        {
             correct++;
+            //Debug.Log("Number correct"+correct);
+        }
         else
+        {
             incorrect++;
-
+            //Debug.Log("Number incorrect"+incorrect);
+        }
+        
         //if question pool is not empty
         refresher();
     }
 
+    public int getCorrect()
+    {
+        return correct;
+    }
+
+    public int getIncorrect()
+    {
+        return incorrect;
+    }
+
     public void refresher()
     {
-        //calls randomize and resets timer
+        //resets randomize and resets timer
+        Randomizer res = GameObject.Find("QuizOverseer").GetComponent<Randomizer>();
+        res.refresh();
+        Timer res2 = GameObject.Find("Timer").GetComponent<Timer>();
+        res2.refresh();
     }
 
 
