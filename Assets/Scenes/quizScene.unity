@@ -2196,9 +2196,8 @@ GameObject:
   - component: {fileID: 1825010047}
   - component: {fileID: 1825010048}
   - component: {fileID: 1825010049}
-  - component: {fileID: 1825010050}
   m_Layer: 5
-  m_Name: GameObject
+  m_Name: QuizOverseer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2248,18 +2247,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1fa5dcb1b16b7ab49a4b2036be8c2bad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1825010050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1825010046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd2a42c4ecc30e4459389dee17966b79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1894987336

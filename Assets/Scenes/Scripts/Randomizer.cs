@@ -36,7 +36,7 @@ public class Randomizer : MonoBehaviour
         //list of possible positions
         List<int> btns = new List<int> { 0, 1, 2, 3};
         //assign position of correct answer
-        int correctPos = UnityEngine.Random.Range(0,btns.Count);
+        correctPos = UnityEngine.Random.Range(0,btns.Count);
         //assign correct answer to random position and update btns
         //correct answer can be assigned multiple times
         btns = assignBtn(btns, correct, correctPos);
@@ -55,9 +55,7 @@ public class Randomizer : MonoBehaviour
     List<int> assignBtn(List<int> btns, string answer, int position)
     {
         //check what the given position is
-        Debug.Log(answer);
-        Debug.Log(position);
-        Debug.Log(btns.Count);
+
         switch (position)
         {
             case 0:
@@ -92,15 +90,16 @@ public class Randomizer : MonoBehaviour
     //takes the pressed buttons position as input then checks if it is the correct button, if true then returns true, lese returns false
     public bool correctPosition(int buttonPos)
     {
-        if(buttonPos == correctPos)
+        if (buttonPos == correctPos)
             return true;
 
         return false;
     }
 
-    // Update is called once per frame
-    void Update()
+    // refreshes the question bank
+    public void refresh()
     {
-        
+        string[] wrong = { "wrong1", "wrong2", "wrong3" };
+        randomize("correct button", wrong);
     }
 }
