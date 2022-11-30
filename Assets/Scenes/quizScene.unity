@@ -713,7 +713,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1311139633}
         m_TargetAssemblyTypeName: SceneSwitchQuiz, Assembly-CSharp
-        m_MethodName: tempBaclQuiz
+        m_MethodName: playResults
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
