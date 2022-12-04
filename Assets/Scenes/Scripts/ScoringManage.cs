@@ -7,11 +7,11 @@ public class ScoringManage : MonoBehaviour
 {
     public Text pointsText; 
     public static ScoringManage instance;
-    Score board = GameObject.Find("Score").GetComponent<Score>();
    
     void Start(){
         int Score = 0;
-        QuizManager point = GameObject.Find("Score").GetComponent<QuizManager>();
+        QuizManager point = GameObject.Find("Real Score").GetComponent<QuizManager>();
+        Score board = GameObject.Find("Real Score").GetComponent<Score>();
         GetPoints(point);
     }
 
