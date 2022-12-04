@@ -5,26 +5,21 @@ using UnityEngine.UI;
 
 public class ScoringManage : MonoBehaviour
 {
-    
-   public static ScoringManage instance;
-    Score track = GameObject.Find("Score").GetComponent<Score>();
-   //Knowing the score
-   public Text pointsText;
+    public Text pointsText; 
+    public static ScoringManage instance;
+    Score board = GameObject.Find("Score").GetComponent<Score>();
    
-   // Start off with 0 points 
-   int Score = 0;
-
-    //Starting to earn points 
     void Start(){
-        QuizManager point;
+        int Score = 0;
+        //QuizManager point;
         GetPoints(point);
-        
-        //scoreText.text = point.getCorrect() + "Points";
     }
 
-    public Text pointText;
+    public void AddPoints(){
+        Score.totalScore += 1;
+        //scoreText.text = point.getCorrect() + "Points";
+    }
     
-
     public void GetPoints(GameObject point){
         point = GameObject.Find("Score").GetComponent<QuizManager>();
         pointsText.text = point.getCorrect().ToString();
