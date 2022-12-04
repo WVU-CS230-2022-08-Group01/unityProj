@@ -16,7 +16,6 @@ public class FileReading : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-     
         ReadFile("readTest.txt");
     }
 
@@ -42,7 +41,7 @@ public class FileReading : MonoBehaviour
             //Add element from array to respective list
             
             this.questionList.Add(lineArr[0]);
-           this.rightAnswerList.Add(lineArr[1]);
+            this.rightAnswerList.Add(lineArr[1]);
             wrongAnswerList.Add(lineArr[2]);
             wrongAnswerList.Add(lineArr[3]);
             wrongAnswerList.Add(lineArr[4]);
@@ -58,6 +57,7 @@ public class FileReading : MonoBehaviour
 
         }
 
+        //This block is all for debugging
         foreach (var arr in wrongAnswerListList)
         {
             foreach (var str in arr)
@@ -81,7 +81,5 @@ public string[][] getWrongAnswerListArr()
     {
         return this.wrongAnswerListList.ToArray();
     }
-
-
 }
 
