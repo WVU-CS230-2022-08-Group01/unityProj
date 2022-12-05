@@ -1,22 +1,66 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class QuizManager : MonoBehaviour
 //public class QuizManager : ScriptableObject
 {
     public static QuizManager Instance { get; private set; }
-    public int correct = 0;
-    public int incorrect = 0;
-    
+    public int correct;
+    public int incorrect;
+    public int index;
+    public string[][] wrongAnswerList;
+    public string[] rightAnswerList;
+    public string[] questionList;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        index = 0;
         correct = 0;
         incorrect = 0;
+        FileReading fr = GameObject.Find("QuizOverseer").GetComponent<FileReading>();
+        questionsAndAnswers(fr);
     }
 
+    public void questionsAndAnswers(FileReading fr)
+    {
+        questionList = fr.getQuestionArr();
+        rightAnswerList = fr.getRightAnswerArr();
+        wrongAnswerList = fr.getWrongAnswerListArr();
+    }
+
+    public string returnQuest()
+    {
+        string quest = questionList[index];
+        return quest;
+    }
+
+    public string returnWrong1()
+    {
+        string wrong1 = wrongAnswerList[index][0];
+        return wrong1;
+    }
+
+    public string returnWrong2()
+    {
+        string wrong2 = wrongAnswerList[index][1];
+        return wrong2;
+    }
+
+    public string returnWrong3()
+    {
+        string wrong3 = wrongAnswerList[index][2];
+        return wrong3;
+    }
+
+    public string returnAns()
+    {
+        string right = rightAnswerList[index];
+        return right;
+    }
     public void incrementDecrement(bool result)
     {
         if (result)
@@ -29,9 +73,17 @@ public class QuizManager : MonoBehaviour
             incorrect++;
             //Debug.Log("Number incorrect"+incorrect);
         }
-        
+
         //if question pool is not empty
-        refresher();
+        if (index < questionList.Length-1)
+        {
+            index++;
+            refresher();
+        }
+        else
+        {
+            SceneManager.LoadScene(2);
+        }
     }
 
     public int getCorrect()

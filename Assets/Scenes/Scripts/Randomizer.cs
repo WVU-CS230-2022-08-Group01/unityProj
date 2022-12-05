@@ -21,8 +21,9 @@ public class Randomizer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        string[] wrong = { "wrong1", "wrong2", "wrong3" };
-        randomize("correct button",wrong);
+        QuizManager n = GameObject.Find("QuizOverseer").GetComponent<QuizManager>();
+        string[] wrong = { n.returnWrong1(), n.returnWrong2(), n.returnWrong3() };
+        randomize(n.returnAns(), wrong);
     }
 
     //error related 
@@ -99,7 +100,8 @@ public class Randomizer : MonoBehaviour
     // refreshes the question bank
     public void refresh()
     {
-        string[] wrong = { "wrong1", "wrong2", "wrong3" };
-        randomize("correct button", wrong);
+        QuizManager n = GameObject.Find("QuizOverseer").GetComponent<QuizManager>();
+        string[] wrong = { n.returnWrong1(), n.returnWrong2(), n.returnWrong3() };
+        randomize(n.returnAns(), wrong);
     }
 }
