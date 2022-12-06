@@ -70,6 +70,7 @@ public class FileReading : MonoBehaviour
     public string[] getQuestionArr()
     {
         ReadFile("readTest.txt");
+        Debug.Log(questionList.Count);
         return this.questionList.ToArray();
     }
 

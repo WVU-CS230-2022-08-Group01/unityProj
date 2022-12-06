@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -22,9 +24,9 @@ public class QuizManager : MonoBehaviour
         correct = 0;
         incorrect = 0;
         FileReading fr = GameObject.Find("QuizOverseer").GetComponent<FileReading>();
-        //QuestionDisplay q = GameObject.Find("questionDisplay").GetComponent<QuestionDisplay>();
+        QuestionDisplay q = GameObject.Find("questionDisplay").GetComponent<QuestionDisplay>();
         questionsAndAnswers(fr);
-       // q.display(returnQuest());
+        q.display(returnQuest());
     }
 
     public void questionsAndAnswers(FileReading fr)
@@ -105,6 +107,8 @@ public class QuizManager : MonoBehaviour
         res.refresh();
         Timer res2 = GameObject.Find("Timer").GetComponent<Timer>();
         res2.refresh();
+        QuestionDisplay q = GameObject.Find("questionDisplay").GetComponent<QuestionDisplay>();
+        q.display(returnQuest());
     }
 
 
