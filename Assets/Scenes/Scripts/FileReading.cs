@@ -9,9 +9,9 @@ using System.Linq;
 public class FileReading : MonoBehaviour
 {
     //Create global variables for lists
-    List<string> questionList = new List<string>();
-    List<string> rightAnswerList = new List<string>();
-    List<string[]> wrongAnswerListList = new List<string[]>();
+    private List<string> questionList = new List<string>();
+    private List<string> rightAnswerList = new List<string>();
+    private List<string[]> wrongAnswerListList = new List<string[]>();
 
     // Start is called before the first frame update
     void Start()
@@ -62,23 +62,26 @@ public class FileReading : MonoBehaviour
         {
             foreach (var str in arr)
             {
-                Debug.Log(str);
+                //Debug.Log(str);
             }
         }
     }
 
     public string[] getQuestionArr()
     {
+        ReadFile("readTest.txt");
         return this.questionList.ToArray();
     }
 
     public string[] getRightAnswerArr()
     {
+        ReadFile("readTest.txt");
         return this.rightAnswerList.ToArray();
     }
 
-public string[][] getWrongAnswerListArr()
+    public string[][] getWrongAnswerListArr()
     {
+        ReadFile("readTest.txt");
         return this.wrongAnswerListList.ToArray();
     }
 }
