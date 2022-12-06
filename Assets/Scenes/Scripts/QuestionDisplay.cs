@@ -1,18 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class QuestionDisplay : MonoBehaviour
 {
     void Start()
     {
-     	QuizManager n = GameObject.Find("QuizOverseer").GetComponent<QuizManager>();
+    QuizManager n = GameObject.Find("QuizOverseer").GetComponent<QuizManager>();
 	string question = n.returnQuest();
 	display(question);
     }
 
-    void display(string question)
+    public void display(string question)
     {
-	GameObject.Find("Question").GetComponentInChildren<Text>.text = question;
+	GameObject.Find("questionDisplay").GetComponentInChildren<Text>().text = question;
     }
 }

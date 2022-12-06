@@ -22,7 +22,9 @@ public class QuizManager : MonoBehaviour
         correct = 0;
         incorrect = 0;
         FileReading fr = GameObject.Find("QuizOverseer").GetComponent<FileReading>();
+        //QuestionDisplay q = GameObject.Find("questionDisplay").GetComponent<QuestionDisplay>();
         questionsAndAnswers(fr);
+       // q.display(returnQuest());
     }
 
     public void questionsAndAnswers(FileReading fr)
