@@ -4,15 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
-
-
 //big note
 //please get input from file reading for the buttons
 //big note
-
-
-
 
 public class Randomizer : MonoBehaviour
 {
