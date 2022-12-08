@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -93,7 +94,6 @@ public class QuizManager : MonoBehaviour
         //if question pool is not empty
         if (index < questionList.Length-1)
         {
-            index++;
             refresher();
         }
         else
@@ -115,6 +115,7 @@ public class QuizManager : MonoBehaviour
     public void refresher()
     {
         //resets randomize and resets timer
+        index++;
         Randomizer res = GameObject.Find("QuizOverseer").GetComponent<Randomizer>();
         res.refresh();
         Timer res2 = GameObject.Find("Timer").GetComponent<Timer>();

@@ -13,16 +13,19 @@ public class FileReading : MonoBehaviour
     private List<string> rightAnswerList = new List<string>();
     private List<string[]> wrongAnswerListList = new List<string[]>();
 
+    public string fileName;
+
     // Start is called before the first frame update
     void Start()
     {
-        ReadFile("readTest.txt");
+        SceneSwitchQuiz Quiz = GameObject.Find("QuizOverseer").GetComponent<SceneSwitchQuiz>();
+        ReadFile(fileName);
     }
 
     public void ReadFile(string fileName)
     {
         string filePath = Application.dataPath + "/" + fileName;
-
+        UnityEngine.Debug.Log(filePath);
         //Variable for name of file to be read
 
         //Initialize empty lists for question's  wrong answers
@@ -37,9 +40,14 @@ public class FileReading : MonoBehaviour
             //Split line at the commas, create array with each element a comma separated string
             string[] lineArr = fileLine.Split(',');
 
-            
+            //UnityEngine.Debug.Log(lineArr.Length);
+           // UnityEngine.Debug.Log(lineArr[0]);
+           // UnityEngine.Debug.Log(lineArr[1]);
+            //UnityEngine.Debug.Log(lineArr[2]);
+            //UnityEngine.Debug.Log(lineArr[3]);
+            //UnityEngine.Debug.Log(lineArr[4]);
             //Add element from array to respective list
-            
+
             this.questionList.Add(lineArr[0]);
             this.rightAnswerList.Add(lineArr[1]);
             wrongAnswerList.Add(lineArr[2]);
@@ -69,20 +77,22 @@ public class FileReading : MonoBehaviour
 
     public string[] getQuestionArr()
     {
-        ReadFile("readTest.txt");
-        Debug.Log(questionList.Count);
+        SceneSwitchQuiz Quiz = GameObject.Find("QuizOverseer").GetComponent<SceneSwitchQuiz>();
+        ReadFile(fileName);
         return this.questionList.ToArray();
     }
 
     public string[] getRightAnswerArr()
     {
-        ReadFile("readTest.txt");
+        SceneSwitchQuiz Quiz = GameObject.Find("QuizOverseer").GetComponent<SceneSwitchQuiz>();
+        ReadFile(fileName);
         return this.rightAnswerList.ToArray();
     }
 
     public string[][] getWrongAnswerListArr()
     {
-        ReadFile("readTest.txt");
+        SceneSwitchQuiz Quiz = GameObject.Find("QuizOverseer").GetComponent<SceneSwitchQuiz>();
+        ReadFile(fileName);
         return this.wrongAnswerListList.ToArray();
     }
 }

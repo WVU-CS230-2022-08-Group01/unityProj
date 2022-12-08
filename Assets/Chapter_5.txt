@@ -8,7 +8,3 @@ ______ and developers must work together throughout the project?, Business peopl
 The most effective way to convey information is?, Face to Face, Email, Discord, Public forums
 What does the XP Plannig processs begin with?, The creation of user stories, Deliverable increments, Commitments, Project velocity
 Which of the following is not a activitie of the Agile Unified Process?, Not testing, Modeling, Implementation, Deployment
-
-
-
-

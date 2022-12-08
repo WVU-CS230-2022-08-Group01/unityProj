@@ -33,7 +33,8 @@ public class Timer : MonoBehaviour
         if (timeToDisplay < 0)
         {
             timeToDisplay = 0;
-            SceneManager.LoadScene(2);
+            QuizManager n = GameObject.Find("QuizOverseer").GetComponent<QuizManager>();
+            n.incrementDecrement(false);
         }
         float minutes = Mathf.FloorToInt(timeToDisplay / 60);
         float seconds = Mathf.FloorToInt(timeToDisplay % 60);

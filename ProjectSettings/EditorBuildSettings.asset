@@ -12,9 +12,21 @@ EditorBuildSettings:
     path: Assets/Scenes/homeScene.unity
     guid: 7ba45bf3b2ce746889a70938b24df204
   - enabled: 1
-    path: Assets/Scenes/quizScene.unity
+    path: Assets/Scenes/Chapter5.unity
     guid: 565a1d3dc7b997946bd187660424db9d
   - enabled: 1
     path: Assets/Scenes/Results.unity
     guid: f3870e5ed3adf044bbb83d61a57917da
+  - enabled: 1
+    path: Assets/Scenes/quizSelect.unity
+    guid: bcc7aceba57fe25428fd0bd420e9a589
+  - enabled: 1
+    path: Assets/Scenes/Chapter1.unity
+    guid: 5273699e785c2c74a8d155fee649f1d3
+  - enabled: 1
+    path: Assets/Scenes/Chapter2.unity
+    guid: ac0014774e5994b4f9a65961f90fa67c
+  - enabled: 1
+    path: Assets/Scenes/Instructions.unity
+    guid: 26ac43d542e4b6a408a1c735b837577d
   m_configObjects: {}

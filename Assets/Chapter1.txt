@@ -1,19 +1,10 @@
 Microsoft Windows is an example of?, System software, Engineering/scientific software, Embedded software, Application software
 The Video game "The Witcher 3: Wild Hunt" is an example of?, Application software, System software, Embedded software, Engineering/scientific software
-Which of the following is a characteristic of web apps?, They are data driven, They don't need to change, due to playform independence, More work is pushed to the client's device, Security is not an issue
-Which of the following is not a reason software would need to change?, To fulfull the orginally specified user requirements, To incorporate new hardware, To add funcionality, To fix bugs, To incorporate new hardware
-Which of the following is not a problem that web apps have that are different from other software types?,Allow one user, Many different platforms,No installation,Must be fast/responsive
-Which of the following is a software applications?, Product-line software,Process automation software, Company Portal,Membership Software
-Why must Software be change?, Software must be adapted to meet the needs, software must be shrinked to make it interoperable, software doesn't need to be re-architected to make it viable within a network environment, Software doesn't need to be enhanced to implement new business requirements.
+Which of the following is a characteristic of web apps?, They are data driven, They don't need to change, due to playform independence, More work is pushed to the client's device
+Which of the following is not a reason software would need to change?, To fix bugs, To incorporate new hardware, To add funcionality, To fulfill the orginally specified user requirements
+Which of the following is not a problem that web apps have that are different from other software types?, Allow one user, Many different platforms, No installation, Must be fast/responsive
+Which of the following is a software applications?, Product-line software, Process automation software, Company Portal, Membership Software
+Why must Software be change?, Software must be adapted to meet the needs, software must be shrinked to make it interoperable, software doesn't need to be re-architected to make it viable within a network environment, Software doesn't need to be enhanced to implement new business requirements
 Which of the following is a characterisics of WebApps?, Security, No evolution, insecurity, No immediacy
 Which of the following is not a characteristics of cloud computing?, Aesthetics, Cloud computing, Frontend, Backend
 Software is ____ that when executed provided desired features, Instructions, Data structures, Documentation, Comments
-
-
-
-
-
-
-
-
-
