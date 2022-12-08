@@ -29,6 +29,18 @@ public class QuizManager : MonoBehaviour
         q.display(returnQuest());
     }
 
+    void OnDisable()
+    {
+        PlayerPrefs.SetInt("correct", correct);
+        PlayerPrefs.SetInt("incorrect", incorrect);
+    }
+
+    void OnEnable()
+    {
+        correct = PlayerPrefs.GetInt("correct");
+        incorrect = PlayerPrefs.GetInt("incorrect");
+    }
+
     public void questionsAndAnswers(FileReading fr)
     {
         questionList = fr.getQuestionArr();
