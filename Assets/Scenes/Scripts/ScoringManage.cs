@@ -21,7 +21,8 @@ public class ScoringManage : MonoBehaviour
     }
     
     public void GetPoints(QuizManager point){
-        pointsText.text = point.getCorrect().ToString();
+        string result = point.getCorrect().ToString() + " / " + (point.getIncorrect() + point.getCorrect()).ToString();
+        pointsText.text = result;
     }
    
 }
