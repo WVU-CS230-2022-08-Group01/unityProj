@@ -1,0 +1,14 @@
+What does Agility Yield?, Rapid incremental delivery of software, A slower time fream for developement, Only one delivery of the final product at the end, Less communication between devs
+When was the Agile Manifesto released?, 2001, 1901, 1950, 2011
+Which of the following is not part of the Agile Process?, Minimal collaboration or communication between devs and customer, Develops software iteratively with a heavy emphasis on construction activities, Delivers multiple's spftware increments, Adapts as changes occur
+Which of the following is intergral in the dev team for Agile?, Mutual trust and respect, Sharing of qualifications, Daily meetings, Punishment for errors
+Agile Development is?, Team oriented, Unnecessary, Time consuming, Individual focused
+______ is prioritized over generating comprehensive documentation?, Working software, javadoc, Aesthetic appeal, Sprint review
+______ and developers must work together throughout the project?, Business people, Family, Financial backers, End users
+The most effective way to convey information is?, Face to Face, Email, Discord, Public forums
+What does the XP Plannig processs begin with?, The creation of user stories, Deliverable increments, Commitments, Project velocity
+Which of the following is not a activitie of the Agile Unified Process?, Not testing, Modeling, Implementation, Deployment
+
+
+
+
