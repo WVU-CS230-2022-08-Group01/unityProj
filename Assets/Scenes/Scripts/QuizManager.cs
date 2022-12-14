@@ -32,8 +32,11 @@ public class QuizManager : MonoBehaviour
 
     void Update()
     {
+        //Initialize object for storing active scene data, store name of scene in string variable
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
+
+        //Check if sceneName contains word "Chapter", if so change chapter string in QuizName component to sceneName.
         if (sceneName.Contains("Chapter"))
         {
             QuizName.chapter = sceneName;

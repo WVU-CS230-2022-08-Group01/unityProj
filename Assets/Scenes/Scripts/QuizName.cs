@@ -4,38 +4,9 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//Static class for storing name of chapters being completed for use with FileWriter to write results to file
 public static class QuizName
 {
+    //Create static string chapter to store chapter name across scenes
     public static string chapter { get; set; }
-/*    public static QuizName Instance;
-    public string chapter;
-    void Awake()
-    {
-        Instance = this;
-        DontDestroyOnLoad(gameObject);
-    }
-
-    void Update()
-    {
-        Scene currentScene = SceneManager.GetActiveScene();
-        string sceneName = currentScene.name;
-        if (sceneName == "Chapter1" || sceneName == "Chapter2" || sceneName == "Chapter5")
-        {
-            chapter = sceneName;
-        }
-    }
-
-    public string returnChapter()
-    {
-        return chapter;
-    }
-
-    public void destroyInstance()
-    {
-        if (Instance != null)
-        {
-            Destroy(gameObject);
-            return;
-        }
-    }*/
 }

@@ -16,13 +16,13 @@ public class ScoringManage : MonoBehaviour
     void Start(){
         int Score = 0;
         QuizManager point = GameObject.Find("Real Score").GetComponent<QuizManager>();
-        //QuizName quizName = GameObject.Find("QuizOverseer").GetComponent<QuizName>();
         Score board = GameObject.Find("Real Score").GetComponent<Score>();
         FileWriter fileWriter = GameObject.Find("Real Score").GetComponent<FileWriter>();
         GetPoints(point);
+
+        //Store string for chapter name in global string variable chapter, write results of quiz to "results.txt" file
         chapter = QuizName.chapter;
         fileWriter.WriteResults(chapter, result, correct, total);
-        //quizName.destroyInstance();
     }
 
     public void AddPoints(){
