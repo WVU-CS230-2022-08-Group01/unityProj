@@ -645,6 +645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c761473db8927564eaadf9d8367d0e44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chapter: 
 --- !u!114 &317381917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -838,6 +839,8 @@ GameObject:
   - component: {fileID: 1866140317}
   - component: {fileID: 1866140318}
   - component: {fileID: 1866140319}
+  - component: {fileID: 1866140321}
+  - component: {fileID: 1866140320}
   m_Layer: 5
   m_Name: Real Score
   m_TagString: Untagged
@@ -920,6 +923,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointsText: {fileID: 1866140315}
+  chapter: 
+  result: 0
 --- !u!114 &1866140318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -934,6 +939,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correct: 0
   incorrect: 0
+  index: 0
+  rightAnswerList: []
+  questionList: []
 --- !u!114 &1866140319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -946,6 +954,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc42a329a8980147b30812e1fec9db1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1866140320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866140312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 108936ee0a7584d408191359066c14d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1866140321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866140312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c761473db8927564eaadf9d8367d0e44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chapter: 
 --- !u!1 &1894921264
 GameObject:
   m_ObjectHideFlags: 0

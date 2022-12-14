@@ -30,6 +30,16 @@ public class QuizManager : MonoBehaviour
         q.display(returnQuest());
     }
 
+    void Update()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
+        if (sceneName.Contains("Chapter"))
+        {
+            QuizName.chapter = sceneName;
+        }
+    }
+
     void OnDisable()
     {
         PlayerPrefs.SetInt("correct", correct);
@@ -78,6 +88,7 @@ public class QuizManager : MonoBehaviour
         string right = rightAnswerList[index];
         return right;
     }
+
     public void incrementDecrement(bool result)
     {
         if (result)
