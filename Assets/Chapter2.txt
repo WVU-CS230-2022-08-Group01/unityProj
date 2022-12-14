@@ -1,10 +1,10 @@
 Component-based process model are designed to take advantage of _____ to decrease devolopemnt time and cost while increasing product quality?, Reuse, Aspects, Artificial intelligence, Requirement
 When is it appropriate to use the waterfall SDLC?, When the project requirement are very well defined, Very Large projects, Never, Small projects for users who are not sure what they want 
 Which is not a characteristic of the engineering discipline?, Lack of efficiency, Mathematics, Empirical evidence, Problem solving
-Which of the following is Hooker's General Principles?, KISS(Keep it simple stupid!),Don't think, What produce, other will throw away| Deny the Future
+Which of the following is Hooker's General Principles?, KISS(Keep it simple stupid!),Don't think, What produce, Other will throw away| Deny the Future
 When is a protoype useful?, When requirement are unclear, When quality code is needed quickly, During the testing phase, When the problem is clearly defined
 Which process model is focused on performing rigorous, mathematical specification?, Formal Methods, Aspect Oriented Software Development, Unified Process, Waterfall
 Which process model is driven by use cases?, Unified Process, Waterfall, Aspect Oriented Software Development, Rapid Prototyping
-What problems from the waterfall model are fixed by the incremental model?, Clear and complete requiements specifications are not required, Blocking states still exists, Customer wiat to get there hand on working products, Cannot accommodate change better by shifting changes into a future increment
+What problems from the waterfall model are fixed by the incremental model?, Clear and complete requiements specifications are not required, Blocking states still exists, Customer wait to get there hand on working products, Cannot accommodate change better by shifting changes into a future increment
 Which could be considered aspects for Aspect Oriented Software Development?, Metric collection, A user input dialog, All components, None of the above
 Which of the following fit under the umbrella activities?, All of the above, Techincal review, Quality Assurance, Project Management
