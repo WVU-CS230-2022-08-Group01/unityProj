@@ -1,0 +1,9 @@
+﻿F:\Github\CS 230\unityProj\Assets\MaterialUI\Editor\CheckboxConfigEditor.cs
+F:\Github\CS 230\unityProj\Assets\MaterialUI\Editor\ShadowGenEditor.cs
+F:\Github\CS 230\unityProj\Assets\MaterialUI\Editor\TexturePostProcessor.cs
+F:\Github\CS 230\unityProj\Assets\MaterialUI\Editor\EZAnimEditor.cs
+F:\Github\CS 230\unityProj\Assets\MaterialUI\Editor\MaterialUIEditorTools.cs
+F:\Github\CS 230\unityProj\Assets\MaterialUI\Editor\ScreenConfigEditor.cs
+F:\Github\CS 230\unityProj\Assets\MaterialUI\Editor\SnapButtonToTextEditor.cs
+F:\Github\CS 230\unityProj\Assets\MaterialUI\Editor\RectTransformSnapEditor.cs
+F:\Github\CS 230\unityProj\Assets\MaterialUI\Editor\RippleConfigEditor.cs
