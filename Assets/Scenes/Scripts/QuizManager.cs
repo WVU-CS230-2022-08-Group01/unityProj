@@ -94,12 +94,10 @@ public class QuizManager : MonoBehaviour
         if (result)
         {
             correct++;
-            //Debug.Log("Number correct"+correct);
         }
         else
         {
             incorrect++;
-            //Debug.Log("Number incorrect"+incorrect);
         }
 
         //if question pool is not empty
