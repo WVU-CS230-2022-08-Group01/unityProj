@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/homeScene.unity
     guid: 7ba45bf3b2ce746889a70938b24df204
   - enabled: 1
-    path: Assets/Scenes/Chapter5.unity
+    path: Assets/Scenes/quizScene.unity
     guid: 565a1d3dc7b997946bd187660424db9d
   - enabled: 1
     path: Assets/Scenes/Results.unity
