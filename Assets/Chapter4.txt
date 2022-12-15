@@ -1,0 +1,9 @@
+Which of the following is a drawback of the waterfall model?, Does not accommodate change well, Is not creative, Requires extensive training to understand, Uncotrolled timeline
+What is Aspect-Oriented Software Development?, A method that provides a methodological approach for constructing aspects, A use case driven process aligned with UML, A method that emphasizes mathmematical specifications, A formal method
+What is a challenge of a personal software process?, It may not be efficient effective or successful, It is too rigid and doesn't allow for change, It cannot be improved, There is no challenge as it is personal and you know yourself
+What is the function of the Transition phase of the unified process?, Beta testing to get feedback, Refine and expand use cases, Make the use cases operational, Deployment
+What is the function of the Construction phase of the unified process?, Make the use cases operational, Beta testing to get feedback, Make the use cases, Deployment
+Which of the following is not an Evolutionary model type?, The V Model, Prototyping, The Spiral, Concurrent
+What is the point of a prescriptive model?, To create an orderly approach to software engineering, To understand how to beta test, To create a rigid structure with little room for change, To create a unified language to model with
+What model is the V-Model similar to?, Waterfall model, Incremental model, Spiral method, Evolutionary model
+Which of the following does not describe the Evolutionary model?, Errors are harder to detect, They are incrememtal, Release product versions after each cycle, Users are involved in development

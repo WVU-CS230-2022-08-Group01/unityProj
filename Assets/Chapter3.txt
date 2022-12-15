@@ -1,0 +1,6 @@
+What are the basic steps in every process flow?, Communication. Planning. Modeling. Construction. Deployment, Planning. Design. Coding. Testing, Fundamental model. Design and build. Implementation, Archetecture planning. Model construction. Code development. Delivery
+When do umbrella activities take place?, Throughout the entire entire software engineering process, During framework activities, In a task set, During a software engineering action
+What do framework activities represent?, Actual work of development, Task patterns, The SPICE standard, Communication
+Which is not a process flow?, Phase, Linear, Iterative, Evolutionary
+Which is not a process pattern type?, Evolutionary pattern, Stage pattern, Task pattern, Phase pattern
+What does a task set define?, The actual work to be done to accomplish the objectives, Components that are of the lowest priority, The process pattern, A template to describe the problem
