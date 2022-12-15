@@ -9,7 +9,7 @@ In order to mimic real testing conditions, the quizzes are timed with a limit of
 
 # Installation
 1) Download Unity (https://unity.com/download)
-2) Download prohect from GitHub
+2) Download project from GitHub
 3) Open project in Unity IDE to run and play quiz game 
 
 # How to Use?
