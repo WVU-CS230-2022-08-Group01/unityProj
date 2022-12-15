@@ -43,4 +43,9 @@ public class SceneSwitchQuiz : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+    //switches scenes to home screen when called
+    public void playPastResults()
+    {
+        SceneManager.LoadScene(7);
+    }
 }
