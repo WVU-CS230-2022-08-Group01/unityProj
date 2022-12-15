@@ -12,6 +12,7 @@ public class FileReading : MonoBehaviour
     private List<string> questionList = new List<string>();
     private List<string> rightAnswerList = new List<string>();
     private List<string[]> wrongAnswerListList = new List<string[]>();
+    private List<string> results = new List<string>();
 
     public string fileName;
 
@@ -19,7 +20,7 @@ public class FileReading : MonoBehaviour
     void Start()
     {
         SceneSwitchQuiz Quiz = GameObject.Find("QuizOverseer").GetComponent<SceneSwitchQuiz>();
-        ReadFile(fileName);
+        //ReadFile(fileName);
     }
 
     public void ReadFile(string fileName)
@@ -53,6 +54,24 @@ public class FileReading : MonoBehaviour
             wrongAnswerList.Clear();
 
         }
+    }
+
+    public List<string> ReadResults(string fileName)
+    {
+        string filePath = fileName;
+        UnityEngine.Debug.Log(filePath);
+
+        results = new List<string>();
+
+        foreach (string fileLine in System.IO.File.ReadLines(@filePath))
+        {
+            string[] lineArr = fileLine.Split(';');
+            string lineToStore = lineArr[0] + "     " + lineArr[1] + "     " + lineArr[2] + "%     " + lineArr[3];
+            Debug.Log(lineToStore);
+            results.Add(lineToStore);
+        }
+
+        return results;
     }
 
     public string[] getQuestionArr()

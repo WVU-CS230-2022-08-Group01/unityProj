@@ -29,7 +29,7 @@ public class FileWriter : MonoBehaviour
         DateTime time = DateTime.Now;
 
         //Create string consisting of concatenated strings to make writing to file simpler/cleaner
-        string lineToWrite = chapter + "," + result + "," + percentVal.ToString() + "," + time.ToString("F");
+        string lineToWrite = chapter + ";" + result + ";" + percentVal.ToString() + ";" + time.ToString("F");
 
         //Create StreamWriter that will append to file "results.txt" if data already exists
         using (StreamWriter writer = new StreamWriter("results.txt", true))
