@@ -32,4 +32,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PastResults.unity
     guid: 5f552cc31f5371e4486e2968e94b77fa
+  - enabled: 1
+    path: Assets/Scenes/Chapter3.unity
+    guid: a34b743a962c8544dbce04aca45b0445
+  - enabled: 1
+    path: Assets/Scenes/Chapter4.unity
+    guid: ca0fdd0033b06d4489facc426f70dc16
   m_configObjects: {}

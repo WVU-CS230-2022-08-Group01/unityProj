@@ -23,6 +23,16 @@ public class SceneSwitchQuiz : MonoBehaviour
         SceneManager.LoadScene(5);
     }
 
+    public void playChapter3()
+    {
+        SceneManager.LoadScene(8);
+    }
+
+    public void playChapter4()
+    {
+        SceneManager.LoadScene(9);
+    }
+
     public void playInstructions()
     {
         SceneManager.LoadScene(6);
