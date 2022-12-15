@@ -9,9 +9,6 @@ public class SceneSwitchQuiz : MonoBehaviour
     
 
     //switches scenes to quiz scene when called
-    public void playChapter5() {
-        SceneManager.LoadScene(1);
-    }
 
     public void playChapter1()
     {
@@ -31,6 +28,10 @@ public class SceneSwitchQuiz : MonoBehaviour
     public void playChapter4()
     {
         SceneManager.LoadScene(9);
+    }
+
+    public void playChapter5() {
+        SceneManager.LoadScene(10);
     }
 
     public void playInstructions()
