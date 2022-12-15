@@ -20,6 +20,6 @@ Scripts used in the project were tested using SonarQube. The code recieved an A 
 
 
 # Credits
-Software: Unity Editor and Unity Hub
-Coding Language: C#
-Tutorials: Youtube, Google 
+- Software: Unity Editor and Unity Hub 
+- Coding Language: C#
+- Tutorials: Youtube, Google 
