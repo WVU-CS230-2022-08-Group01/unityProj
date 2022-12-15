@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class ResultLogItem : MonoBehaviour
 {
+    //Set text of result to be logged
     public void SetResult(string result)
     { 
         GetComponent<Text>().text = result;
-        Debug.Log(GetComponent<Text>().text);
     }
 }
