@@ -23,7 +23,7 @@ public class FileWriter : MonoBehaviour
     public void WriteResults(string chapter, string result, double correct, double total)
     {
         //Calculate percent value of correct answers out of total
-        double percentVal = (correct / total) * 100;
+        double percentVal = Math.Truncate(((correct / total) * 100)*100)/100;
 
         //Take the date and time of the system at time of quiz completion
         DateTime time = DateTime.Now;
