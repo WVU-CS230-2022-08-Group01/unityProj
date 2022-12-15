@@ -20,7 +20,6 @@ public class FileReading : MonoBehaviour
     void Start()
     {
         SceneSwitchQuiz Quiz = GameObject.Find("QuizOverseer").GetComponent<SceneSwitchQuiz>();
-        //ReadFile(fileName);
     }
 
     public void ReadFile(string fileName)
